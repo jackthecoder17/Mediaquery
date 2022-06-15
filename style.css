@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./Images/bg-intro-desktop.png);
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    width: 100%;
+    text-align: left;
+    font-weight: 700;
+}
+
+.item {
+    margin: 100px 25px;
+}
+
+.ctn1 p {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(233, 226, 226);
+    font-weight: 600;
+}
+
+.ctn1 {
+    text-align: left;
+}
+
+.ctn2 {
+    display: flex;
+    flex-flow: column;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: white;
+    padding: 25px 25px;
+    border-radius: 7px;
+    box-shadow: 0 8px rgba(20, 20, 20, 0.1);
+}
+
+.Try {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(248, 32%, 49%);
+    color: hsl(246, 25% 77%);
+    font-weight: 500;
+    padding: 13px 20px;
+    border-radius: 6px;
+    box-shadow: 0 8px rgba(20, 20, 20, 0.1);
+    margin-bottom: 22px;
+}
+
+.da {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.sa {
+    display: none;
+}
+
+svg {
+    position: absolute;
+    left: 370px;
+    top: 15px;
+}
+
+small {
+    color: #e74c3c;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+input {
+    padding: 20px;
+    margin: 8px 0px;
+    margin-bottom: 12px;
+    width: 430px;
+    height: 41px;
+    border: 1px solid hsl(246, 25%, 77%);
+    outline: 0;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: hsl(249, 10%, 26%);
+}
+
+input:focus {
+    border: 0.2px solid hsl(249, 10%, 26%);
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: hsl(246, 25%, 77%);
+}
+
+.your-class::-webkit-input-placeholder {
+    color: #e74c3c;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+    width: 430px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: hsl(154, 59%, 51%);
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+}
+
+.terms {
+    color: hsl(246, 25%, 77%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+/*----------*/
+
+@media screen and (max-width:1023px) {
+    body {
+        background-image: url(./Images/bg-intro-mobile.png);
+    }
+    .sa {
+        width: 100%;
+    }
+    .container {
+        display: flex;
+        flex-flow: column;
+    }
+    h1 {
+        text-align: center;
+    }
+    form {
+        width: 100%;
+    }
+    .ctn1 {
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .ctn2 {
+        margin-top: -100px;
+    }
+    .terms {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .ctn1 {
+        width: 100%;
+    }
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+    }
+    svg {
+        position: absolute;
+        left: 300px;
+    }
+    input {
+        width: 340px;
+    }
+    form {
+        width: 100%;
+    }
+    .ctn2 {
+        margin-top: -100px;
+    }
+    .ctn2,
+    button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .ctn1 {
+        width: 80%;
+    }
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+    }
+    svg {
+        position: absolute;
+        left: 180px;
+    }
+    .ctn2 {
+        width: 80%;
+    }
+    input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:325px) {
+    svg {
+        position: absolute;
+        left: 150px;
+    }
+}
